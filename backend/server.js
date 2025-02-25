@@ -50,7 +50,7 @@ const verifyAdmin = async (req, res, next) => {
     if (!token) return res.status(401).json({ error: "Token não fornecido" });
     
     const decodedToken = await admin.auth().verifyIdToken(token);
-    if (decodedToken.uid !== "lu3fjCdyZUPJnesrxZBQYsT9TQv2") {
+    if (decodedToken.uid !== "lu3fjCdyZUPJnesrxZBQYsT9TQv2", "ESvdbzX1ZgepZGJsBmWngbR9qRz2") {
       return res.status(403).json({ error: "Acesso negado" });
     }
     next();

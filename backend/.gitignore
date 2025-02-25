@@ -68,6 +68,5 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 serviceAccountKey.json
-cloudinary.js
-firebase.json
+
 bfg.jar
