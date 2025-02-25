@@ -1,0 +1,37 @@
+.sidebar {
+  background-color: transparent; /* Remove o fundo */
+  color: #343a40;
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #dee2e6; /* Adiciona uma borda direita */
+}
+
+.sidebar .nav-link {
+  color: #343a40;
+  margin-bottom: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff; /* Cor de fundo azul para o link ativo */
+  color: #fff; /* Cor do texto branco para o link ativo */
+  border-radius: 5px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #007bff; /* Cor de fundo azul para o hover */
+  color: #fff; /* Cor do texto branco para o hover */
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 16px;
+  }
+}
